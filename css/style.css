@@ -1,0 +1,275 @@
+/* Global Rules */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
+  background-image: url(../img/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fafbff;
+}
+
+/* End Global Rules */
+/* Start Main Site */
+#main-site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 8%;
+}
+
+#main-site header {
+  text-align: center;
+  background-image: url(../img/pattern-circles.svg);
+  background-repeat: no-repeat;
+  padding: 20px 10px;
+  background-position: center;
+  margin-bottom: 25px;
+}
+
+#main-site header h1 {
+  color: #293356;
+  margin-bottom: 0;
+}
+
+#main-site header p {
+  color: #858fad;
+}
+
+#main-site .pricing-container {
+  background-color: white;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+#main-site .pricing-container .head {
+  padding: 30px 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-site .pricing-container .head .pageviews {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #858fad;
+}
+
+#main-site .pricing-container .head .cost {
+  color: #858fad;
+}
+
+#main-site .pricing-container .head .cost span {
+  font-size: 2em;
+  color: #293356;
+  font-weight: bold;
+}
+
+#main-site .pricing-container .bar {
+  background-color: #eaeefb;
+  width: 90%;
+  border-radius: 10px;
+  margin: auto;
+  height: 15px;
+}
+
+#main-site .pricing-container .bar .inside {
+  background-color: #a5f3eb;
+  border-radius: 10px;
+  width: 0%;
+  height: 100%;
+  position: relative;
+}
+
+#main-site .pricing-container .bar .inside .button {
+  background-color: #10d5c2;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  top: -12px;
+  z-index: 5;
+  -webkit-box-shadow: 1px 10px 10px #a5f3eb;
+          box-shadow: 1px 10px 10px #a5f3eb;
+  cursor: pointer;
+}
+
+#main-site .pricing-container .billing-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 40px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-bottom: 1px solid #cdd7ee;
+  width: 100%;
+}
+
+#main-site .pricing-container .billing-settings p {
+  color: #858fad;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#main-site .pricing-container .billing-settings .billing-button {
+  background-color: #eaeefb;
+  padding: 5px;
+  border: none;
+  outline-width: 0;
+  width: 60px;
+  border-radius: 20px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+#main-site .pricing-container .billing-settings .billing-button span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+#main-site .pricing-container .billing-settings .billing-button.selected {
+  background-color: #a5f3eb;
+}
+
+#main-site .pricing-container .billing-settings .billing-button.selected span {
+  margin-left: auto;
+}
+
+#main-site .pricing-container .billing-settings .label {
+  background-color: #feece7;
+  padding: 5px;
+  color: #ff8c66;
+  font-size: 13px;
+}
+
+#main-site .pricing-container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 30px 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main-site .pricing-container .info ul {
+  padding: 0;
+  list-style: none;
+}
+
+#main-site .pricing-container .info ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #858fad;
+}
+
+#main-site .pricing-container .info ul li img {
+  margin-right: 10px;
+}
+
+#main-site .pricing-container .info .submit-button {
+  border: none;
+  outline-width: 0;
+  color: #858fad;
+  font-weight: bold;
+  background-color: #293356;
+  padding: 10px 50px;
+  height: 3em;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 25px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+#main-site .pricing-container .info .submit-button:hover {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  #main-site .pricing-container {
+    width: 90%;
+  }
+  #main-site .pricing-container .head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main-site .pricing-container .head .cost {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #main-site .pricing-container .head .bar {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+  #main-site .pricing-container .billing-settings {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 12px;
+  }
+  #main-site .pricing-container .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* End Main Site */
+/*# sourceMappingURL=style.css.map */
